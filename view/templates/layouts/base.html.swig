@@ -40,6 +40,9 @@
     </div>
   </div>
 
+  <script>window.data = {{ data | json | raw}};</script>
   <script src="assets/js/prism.min.js"></script>
+  <script src="assets/js/lunr.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

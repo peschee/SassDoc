@@ -664,7 +664,7 @@
     
       
         <li>
-        <a href="#function-sl-str-compare">sl-str-compare</a> 
+        <a href="#function-sl-is-number">sl-is-number</a> 
         <span class="annotation">private</span>
         
         </li>
@@ -680,7 +680,7 @@
     
       
         <li>
-        <a href="#function-sl-is-number">sl-is-number</a> 
+        <a href="#function-sl-str-compare">sl-str-compare</a> 
         <span class="annotation">private</span>
         
         </li>
@@ -6662,6 +6662,215 @@ null</code></pre>
         
           
           
+            <section class="sassdoc__item  " id="function-sl-is-number">
+
+  <h2 class="sassdoc__item-name">
+  
+  
+  <code>sl-is-number</code>
+
+  
+
+  
+
+  
+</h2>
+
+  
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+  <pre class="sassdoc__item-code  language-scss"><code>@function sl-is-number ($value) { ... }</code></pre>
+
+  
+
+    
+  <h3>Description</h3>
+  <p class="sassdoc__item-description"><p>Check whether value is a number</p></p>
+
+
+    
+<h3>Parameters</h3>
+
+<table class="sassdoc__item-parameters">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Default value</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr class="sassdoc__item-parameter">
+        <td data-label="name"><code>$value</code></td>
+        <td data-label="desc"><p>value to run test against</p></td>
+        <td data-label="type">
+        
+          Any
+        
+        </td>
+        <td data-label="default">&mdash;</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+
+    
+  <h3>Returns</h3>
+  <p class="sassdoc__item-description">
+  
+    <code>Bool</code>
+  
+  </p>
+
+
+    
+
+    
+
+    
+
+    
+  <h3>Used by</h3>
+  
+    <ul class="sassdoc__item-usedby">
+    <li><a href="#function-sl-sum"><code>sl-sum</code></a></li>
+    </ul>
+  
+
+
+    	
+
+    
+
+    
+
+    
+  <h3>Found at</h3>
+  <p><code>examples/stylesheets/SassyLists/helpers/_is-number.scss</code></p>
+
+
+  
+
+</section>
+
+          
+        
+          
+          
+            <section class="sassdoc__item  " id="function-sl-missing-dependencies">
+
+  <h2 class="sassdoc__item-name">
+  
+  
+  <code>sl-missing-dependencies</code>
+
+  
+
+  
+
+  
+</h2>
+
+  
+  
+    
+
+    
+
+    
+      
+    
+
+    
+      
+    
+  
+  <pre class="sassdoc__item-code  language-scss"><code>@function sl-missing-dependencies ($functions...) { ... }</code></pre>
+
+  
+
+    
+  <h3>Description</h3>
+  <p class="sassdoc__item-description"><p>Checks whether <code>$functions</code> exist in global scope.</p></p>
+
+
+    
+<h3>Parameters</h3>
+
+<table class="sassdoc__item-parameters">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Default value</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr class="sassdoc__item-parameter">
+        <td data-label="name"><code>$functions</code></td>
+        <td data-label="desc"><p>list of functions to check for</p></td>
+        <td data-label="type">
+        
+          <code>Arglist</code>
+        
+        </td>
+        <td data-label="default">&mdash;</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+
+    
+  <h3>Returns</h3>
+  <p class="sassdoc__item-description"><p>Whether or not there are missing dependencies</p>
+  
+    <code>Bool</code>
+  
+  </p>
+
+
+    
+
+    
+
+    
+
+    
+
+    	
+
+    
+
+    
+
+    
+  <h3>Found at</h3>
+  <p><code>examples/stylesheets/SassyLists/helpers/_missing-dependencies.scss</code></p>
+
+
+  
+
+</section>
+
+          
+        
+          
+          
             <section class="sassdoc__item  " id="function-sl-str-compare">
 
   <h2 class="sassdoc__item-name">
@@ -6801,215 +7010,6 @@ null</code></pre>
     
   <h3>Found at</h3>
   <p><code>examples/stylesheets/SassyLists/helpers/_str-compare.scss</code></p>
-
-
-  
-
-</section>
-
-          
-        
-          
-          
-            <section class="sassdoc__item  " id="function-sl-missing-dependencies">
-
-  <h2 class="sassdoc__item-name">
-  
-  
-  <code>sl-missing-dependencies</code>
-
-  
-
-  
-
-  
-</h2>
-
-  
-  
-    
-
-    
-
-    
-      
-    
-
-    
-      
-    
-  
-  <pre class="sassdoc__item-code  language-scss"><code>@function sl-missing-dependencies ($functions...) { ... }</code></pre>
-
-  
-
-    
-  <h3>Description</h3>
-  <p class="sassdoc__item-description"><p>Checks whether <code>$functions</code> exist in global scope.</p></p>
-
-
-    
-<h3>Parameters</h3>
-
-<table class="sassdoc__item-parameters">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Default value</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-      <tr class="sassdoc__item-parameter">
-        <td data-label="name"><code>$functions</code></td>
-        <td data-label="desc"><p>list of functions to check for</p></td>
-        <td data-label="type">
-        
-          <code>Arglist</code>
-        
-        </td>
-        <td data-label="default">&mdash;</td>
-      </tr>
-    
-  </tbody>
-</table>
-
-
-    
-  <h3>Returns</h3>
-  <p class="sassdoc__item-description"><p>Whether or not there are missing dependencies</p>
-  
-    <code>Bool</code>
-  
-  </p>
-
-
-    
-
-    
-
-    
-
-    
-
-    	
-
-    
-
-    
-
-    
-  <h3>Found at</h3>
-  <p><code>examples/stylesheets/SassyLists/helpers/_missing-dependencies.scss</code></p>
-
-
-  
-
-</section>
-
-          
-        
-          
-          
-            <section class="sassdoc__item  " id="function-sl-is-number">
-
-  <h2 class="sassdoc__item-name">
-  
-  
-  <code>sl-is-number</code>
-
-  
-
-  
-
-  
-</h2>
-
-  
-  
-    
-
-    
-
-    
-
-    
-      
-    
-  
-  <pre class="sassdoc__item-code  language-scss"><code>@function sl-is-number ($value) { ... }</code></pre>
-
-  
-
-    
-  <h3>Description</h3>
-  <p class="sassdoc__item-description"><p>Check whether value is a number</p></p>
-
-
-    
-<h3>Parameters</h3>
-
-<table class="sassdoc__item-parameters">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Default value</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-      <tr class="sassdoc__item-parameter">
-        <td data-label="name"><code>$value</code></td>
-        <td data-label="desc"><p>value to run test against</p></td>
-        <td data-label="type">
-        
-          Any
-        
-        </td>
-        <td data-label="default">&mdash;</td>
-      </tr>
-    
-  </tbody>
-</table>
-
-
-    
-  <h3>Returns</h3>
-  <p class="sassdoc__item-description">
-  
-    <code>Bool</code>
-  
-  </p>
-
-
-    
-
-    
-
-    
-
-    
-  <h3>Used by</h3>
-  
-    <ul class="sassdoc__item-usedby">
-    <li><a href="#function-sl-sum"><code>sl-sum</code></a></li>
-    </ul>
-  
-
-
-    	
-
-    
-
-    
-
-    
-  <h3>Found at</h3>
-  <p><code>examples/stylesheets/SassyLists/helpers/_is-number.scss</code></p>
 
 
   
@@ -7256,6 +7256,9 @@ null</code></pre>
     </div>
   </div>
 
+  <script>window.data = {"variable":[{"description":"Defines whether the lib should support legacy browsers (e.g. `IE 8`).\n","context":{"type":"variable","name":"support-legacy","value":"true","scope":"global"},"since":["0.3.9"],"todos":["Nothing. It's awesome."],"link":[{"url":"https://github.com/HugoGiraudel/SassDoc","caption":"SassDoc"}],"datatype":["Bool"],"file":{"path":"examples/stylesheets/_variables.scss","name":"_variables"},"access":["public"]},{"description":"Defines the number of iteration.\n","context":{"type":"variable","name":"i","value":"0","scope":"global"},"deprecated":[""],"datatype":["Number"],"access":["private"],"file":{"path":"examples/stylesheets/_variables.scss","name":"_variables"}},{"description":"Test map\n","context":{"type":"variable","name":"map","value":"(\n  \"a\": \"b\", \n  \"c\": \"\"\n)","scope":"private"},"datatype":["Map"],"file":{"path":"examples/stylesheets/_variables.scss","name":"_variables"},"access":["public"]}],"function":[{"description":"Chunks `$list` into `$size` large lists.\n\n","context":{"type":"function","name":"sl-chunk"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to chunk"},{"type":"Number","name":"size","description":"length of lists"}],"throws":["$size is not a number for `sl-chunk`."],"requires":[{"type":"function","name":"sl-to-list"}],"example":["sl-chunk(a b c d e, 2)\n// a b, c d, e"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_chunk.scss","name":"_chunk"},"access":["public"]},{"description":"Initialize an empty comma-separated list.\n\n","context":{"type":"function","name":"sl-comma-list"},"ignore":[null],"since":["2.2.0"],"example":["sl-comma-list()\n// ()"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_comma-list.scss","name":"_comma-list"},"access":["public"]},{"description":"Returns whether `$list` contains `$value`.\n\n","context":{"type":"function","name":"sl-contain"},"since":["0.3.0"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to check"},{"type":"*","name":"value","description":"value to look for"}],"example":["sl-contain(a b c, a)\n// true","sl-contain(a b c, z)\n// false"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_contain.scss","name":"_contain"},"access":["public"],"aliased":["sl-include"],"usedBy":[{"item":"sl-include","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-include"},"requires":[{"type":"function","name":"sl-contain"}],"alias":["sl-contain"],"file":{"path":"examples/stylesheets/SassyLists/_contain.scss","name":"_contain"},"access":["public"]},{"description":"Counts the number of occurrences of each value of `$list`.\n\n","context":{"type":"function","name":"sl-count-values"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to count values from"}],"example":["sl-count-values(a b c a)\n// (a: 2, b: 1, c: 1)"],"returns":[{"type":"Map","description":"Values mapped to their count"}],"file":{"path":"examples/stylesheets/SassyLists/_count-values.scss","name":"_count-values"},"access":["public"]},{"description":"Returns `$list` as a string, prettified if `$pre` is set to true.\n\n","context":{"type":"function","name":"sl-debug"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to debug"},{"type":"Bool","name":"pre","default":"false","description":"enable/disable variables type and proper indentation"},{"type":"Number","name":"level","default":"1","description":"internal variable for recursion"}],"requires":[{"type":"function","name":"sl-is-empty"},{"type":"function","name":"sl-is-single"},{"type":"function","name":"sl-has-multiple-values"}],"example":["sl-debug(a b c)\n// '(\"a\", \"b\", \"c\")'"],"returns":[{"type":"String"}],"file":{"path":"examples/stylesheets/SassyLists/_debug.scss","name":"_debug"},"access":["public"],"usedBy":[{"item":"sl-debug","type":"mixin"}]},{"description":"Tests whether all items from `$list` pass the test implemented by `$function`.\n\n","context":{"type":"function","name":"sl-every"},"since":["2.0.0"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to run test against"},{"type":"String","name":"function","description":"function to run against every item from list"},{"type":"ArgList","name":"args","description":"extra arguments to pass to the function"}],"example":["sl-every(1 2 3, unitless)\n// true","sl-every(1 2 3px, unitless)\n// false"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_every.scss","name":"_every"},"access":["public"],"usedBy":[{"item":"sl-sum","type":"function"}]},{"description":"Explodes `$string` into a list using `$delimiter` as a delimiter.\n\n","context":{"type":"function","name":"sl-explode"},"ignore":[null],"parameters":[{"type":"String","name":"string","description":"string to explode"},{"type":"String","name":"delimiter","default":"''","description":"string to use as a delimiter"},{"type":"String","name":"separator","default":"'space'","description":"list separator"}],"throws":["$string is not a string for `sl-explode`.","$delimiter is not a string for `sl-explode`."],"example":["sl-explode(abc)\n// a b c","sl-explode(abc, b)\n// a c"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_explode.scss","name":"_explode"},"access":["public"]},{"description":"Returns first element of `$list`.\n\n","context":{"type":"function","name":"sl-first"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to retrieve first item from"}],"throws":["Cannot find first item of empty list."],"requires":[{"type":"function","name":"sl-is-empty"}],"example":["sl-first(a b c)\n// a","sl-first(a)\n// a","sl-first(())\n// null"],"returns":[{"type":"*"}],"file":{"path":"examples/stylesheets/SassyLists/_first.scss","name":"_first"},"access":["public"],"aliased":["sl-head"],"usedBy":[{"item":"sl-head","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-head"},"requires":[{"type":"function","name":"sl-first"}],"alias":["sl-first"],"file":{"path":"examples/stylesheets/SassyLists/_first.scss","name":"_first"},"access":["public"]},{"description":"Turns multidimensional `$list` into a one-level list.\n\n","context":{"type":"function","name":"sl-flatten"},"since":["0.3.0"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to flatten"}],"requires":[{"type":"function","name":"sl-has-multiple-values"}],"example":["sl-flatten(a b c, d e f, g h i)\n// a b c d e f g h i"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_flatten.scss","name":"_flatten"},"access":["public"],"aliased":["sl-unfold"],"usedBy":[{"item":"sl-unfold","type":"function"},{"item":"sl-union","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-unfold"},"requires":[{"type":"function","name":"sl-flatten"}],"alias":["sl-flatten"],"file":{"path":"examples/stylesheets/SassyLists/_flatten.scss","name":"_flatten"},"access":["public"]},{"description":"Tests whether `$list` has at least 2 values.\n\n","context":{"type":"function","name":"sl-has-multiple-values"},"ignore":[null],"since":["2.2.0"],"parameters":[{"type":"List","name":"list","description":"list to run test against"}],"example":["sl-has-multiple-values(a)\n// false","sl-has-multiple-values(a b)\n// true"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_has-multiple-values.scss","name":"_has-multiple-values"},"usedBy":[{"item":"sl-debug","type":"function"},{"item":"sl-flatten","type":"function"},{"item":"sl-loop","type":"function"},{"item":"sl-sort","type":"function"},{"item":"sl-to-string","type":"function"}],"access":["public"]},{"description":"Tests whether `$list` is not empty.\n\n","context":{"type":"function","name":"sl-has-values"},"ignore":[null],"since":["2.2.0"],"parameters":[{"type":"List","name":"list","description":"list to run test against"}],"example":["sl-has-values(a)\n// true","sl-has-values(())\n// false"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_has-values.scss","name":"_has-values"},"access":["public"]},{"description":"Adds `$value` at `$index` in `$list`.\n\n","context":{"type":"function","name":"sl-insert-nth"},"ignore":[null],"requires":[{"type":"function","name":"sl-is-true"}],"parameters":[{"type":"List","name":"list","description":"list to update"},{"type":"Number","name":"index","description":"index to add"},{"type":"*","name":"value","description":"value to add"}],"throws":["List index $index is not a number for `sl-insert-nth`.","List index $index must be a non-zero integer for `sl-insert-nth`."],"example":["sl-insert-nth(a b c, 2, z)\n// a z b c","sl-insert-nth(a b c, 42, z)\n// a b c z","sl-insert-nth(a b c, -42, z)\n// null"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_insert-nth.scss","name":"_insert-nth"},"access":["public"]},{"description":"Returns a list of shared value from `$list` and `$lists` minus duplicates.\n\n","context":{"type":"function","name":"sl-intersection"},"since":["0.4.0"],"ignore":[null],"requires":[{"type":"function","name":"sl-remove-duplicates"},{"type":"function","name":"sl-to-list"}],"parameters":[{"type":"List","name":"list","description":"first list"},{"type":"ArgList","name":"lists","description":"other lists"}],"example":["sl-intersection(a b c, b e d, a c b)\n// b"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_intersection.scss","name":"_intersection"},"access":["public"]},{"description":"Tests whether `$list` is empty.\n\n","context":{"type":"function","name":"sl-is-empty"},"ignore":[null],"since":["2.1.0"],"parameters":[{"type":"List","name":"list","description":"list to run test against"}],"example":["sl-is-empty(())\n// true","sl-is-empty(a)\n// false"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_is-empty.scss","name":"_is-empty"},"usedBy":[{"item":"sl-debug","type":"function"},{"item":"sl-first","type":"function"},{"item":"sl-empty","type":"function"},{"item":"sl-last","type":"function"},{"item":"sl-random-value","type":"function"},{"item":"sl-to-map","type":"function"}],"access":["public"],"aliased":["sl-empty"]},{"description":"","context":{"type":"function","name":"sl-empty"},"requires":[{"type":"function","name":"sl-is-empty"}],"alias":["sl-is-empty"],"file":{"path":"examples/stylesheets/SassyLists/_is-empty.scss","name":"_is-empty"},"access":["public"]},{"description":"Tests whether `$list` has a single item.\n\n","context":{"type":"function","name":"sl-is-single"},"ignore":[null],"since":["2.2.0"],"parameters":[{"type":"List","name":"list","description":"list to run test against"}],"example":["sl-is-single(())\n// false","sl-is-single(a)\n// true","sl-is-single(a b)\n// false"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_is-single.scss","name":"_is-single"},"usedBy":[{"item":"sl-debug","type":"function"}],"access":["public"]},{"description":"Checks whether `$list` is symmetrical.\n\n","context":{"type":"function","name":"sl-is-symmetrical"},"ignore":[null],"requires":[{"type":"function","name":"sl-reverse"}],"parameters":[{"type":"List","name":"list","description":"list to check"}],"example":["sl-is-symmetrical(a b c)\n// false","sl-is-symmetrical(a b a)\n// true"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_is-symmetrical.scss","name":"_is-symmetrical"},"access":["public"],"aliased":["sl-is-mirror"],"usedBy":[{"item":"sl-is-mirror","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-is-mirror"},"requires":[{"type":"function","name":"sl-is-symmetrical"}],"alias":["sl-is-symmetrical"],"file":{"path":"examples/stylesheets/SassyLists/_is-symmetrical.scss","name":"_is-symmetrical"},"access":["public"]},{"description":"Returns last index of `$value` in `$list`.\n\n","context":{"type":"function","name":"sl-last-index"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to search"},{"type":"*","name":"value","description":"value to be searched for"}],"example":["sl-last-index(a b a, a)\n// 3","sl-last-index(a b a, z)\n// null"],"returns":[{"type":"Number | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_last-index.scss","name":"_last-index"},"access":["public"]},{"description":"Returns last element of `$list`.\n\n","context":{"type":"function","name":"sl-last"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to retrieve last value from"}],"throws":["Cannot find last item of empty list."],"requires":[{"type":"function","name":"sl-is-empty"}],"example":["sl-last(a b c)\n// c","sl-last(a)\n// a","sl-last(())\n// null"],"returns":[{"type":"*"}],"file":{"path":"examples/stylesheets/SassyLists/_last.scss","name":"_last"},"access":["public"],"usedBy":[{"item":"sl-to-string","type":"function"}]},{"description":"Shift indexes from `$list` of `$value`.\n\n","context":{"type":"function","name":"sl-loop"},"author":["Ana Tudor"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to update"},{"type":"Number","name":"value","default":"1","description":"number of position between old and new indexes"}],"throws":["$value is not a number for `loop`."],"requires":[{"type":"function","name":"sl-has-multiple-values"}],"example":["sl-loop(a b c)\n// c a b","sl-loop(a b c, 2)\n// b c a"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_loop.scss","name":"_loop"},"access":["public"],"aliased":["sl-shift-indexes"],"usedBy":[{"item":"sl-shift-indexes","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-shift-indexes"},"requires":[{"type":"function","name":"sl-loop"}],"alias":["sl-loop"],"file":{"path":"examples/stylesheets/SassyLists/_loop.scss","name":"_loop"},"access":["public"]},{"description":"Adds `$value` as first index of `$list`.\n\n","context":{"type":"function","name":"sl-prepend"},"ignore":[null],"requires":[{"type":"function","name":"sl-is-true"},{"type":"function","name":"sl-to-list"}],"parameters":[{"type":"List","name":"list","description":"list to preprend value to"},{"type":"*","name":"value","description":"value to prepend to the list"}],"example":["sl-prepend(a b c, z)\n// z a b c"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_prepend.scss","name":"_prepend"},"access":["public"]},{"description":"Removes all false and null values from `$list`.\n\n","context":{"type":"function","name":"sl-purge"},"ignore":[null],"requires":[{"type":"function","name":"sl-is-true"},{"type":"function","name":"sl-to-list"}],"parameters":[{"type":"List","name":"list","description":"list to purge"}],"example":["sl-purge(null a false b)\n// a b"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_purge.scss","name":"_purge"},"access":["public"],"aliased":["sl-clean"],"usedBy":[{"item":"sl-clean","type":"function"},{"item":"sl-replace-nth","type":"function"},{"item":"sl-replace","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-clean"},"requires":[{"type":"function","name":"sl-purge"}],"alias":["sl-purge"],"file":{"path":"examples/stylesheets/SassyLists/_purge.scss","name":"_purge"},"access":["public"]},{"description":"Returns a random value of `$list`.\n\n","context":{"type":"function","name":"sl-random-value"},"since":["0.2.0"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to random value from"}],"throws":["Cannot find a random value in an empty list."],"requires":[{"type":"function","name":"sl-is-empty"}],"example":["sl-random-value(a b c)\n// a"],"returns":[{"type":"*"}],"file":{"path":"examples/stylesheets/SassyLists/_random-value.scss","name":"_random-value"},"access":["public"],"aliased":["sl-roll","sl-luck"],"usedBy":[{"item":"sl-roll","type":"function"},{"item":"sl-luck","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-roll"},"requires":[{"type":"function","name":"sl-random-value"}],"alias":["sl-random-value"],"file":{"path":"examples/stylesheets/SassyLists/_random-value.scss","name":"_random-value"},"access":["public"]},{"description":"","context":{"type":"function","name":"sl-luck"},"requires":[{"type":"function","name":"sl-random-value"}],"alias":["sl-random-value"],"file":{"path":"examples/stylesheets/SassyLists/_random-value.scss","name":"_random-value"},"access":["public"]},{"description":"Build a list of values from 1 through `$n`.\n\n","context":{"type":"function","name":"sl-range"},"ignore":[null],"since":["2.2.0"],"parameters":[{"type":"Number","name":"n","description":"maximum value"}],"throws":["`$n` is not a number for `sl-range`.","`$n` is not unitless for `sl-range`.","`$n` is not greater than 0 for `sl-range`."],"example":["sl-range(5)\n// 1 2 3 4 5","sl-range(1)\n// 1","sl-range(-42)\n// null"],"returns":[{"type":"List | Number | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_range.scss","name":"_range"},"access":["public"],"usedBy":[{"item":"sl-to-map","type":"function"}]},{"description":"Removes duplicate values from `$list`.\n\n","context":{"type":"function","name":"sl-remove-duplicates"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to remove duplicates from"}],"requires":[{"type":"function","name":"sl-to-list"}],"example":["sl-remove-duplicates(a b a b)\n// a b"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_remove-duplicates.scss","name":"_remove-duplicates"},"usedBy":[{"item":"sl-intersection","type":"function"},{"item":"sl-unique","type":"function"},{"item":"sl-union","type":"function"}],"access":["public"],"aliased":["sl-unique"]},{"description":"","context":{"type":"function","name":"sl-unique"},"requires":[{"type":"function","name":"sl-remove-duplicates"}],"alias":["sl-remove-duplicates"],"file":{"path":"examples/stylesheets/SassyLists/_remove-duplicates.scss","name":"_remove-duplicates"},"access":["public"]},{"description":"Removes value from `$list` at index `$index`.\n\n","context":{"type":"function","name":"sl-remove-nth"},"ignore":[null],"requires":[{"type":"function","name":"sl-replace-nth"}],"parameters":[{"type":"List","name":"list","description":"list to remove value from"},{"type":"Number","name":"index","description":"index to remove"}],"example":["sl-remove-nth(a b c, 2)\n// a c","sl-remove-nth(a b c, 42)\n// null"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_remove-nth.scss","name":"_remove-nth"},"access":["public"],"aliased":["sl-without-nth"],"usedBy":[{"item":"sl-without-nth","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-without-nth"},"requires":[{"type":"function","name":"sl-remove-nth"}],"alias":["sl-remove-nth"],"file":{"path":"examples/stylesheets/SassyLists/_remove-nth.scss","name":"_remove-nth"},"access":["public"]},{"description":"Removes value(s) `$value` from `$list`.\n\n","context":{"type":"function","name":"sl-remove"},"ignore":[null],"requires":[{"type":"function","name":"sl-replace"}],"parameters":[{"type":"List","name":"list","description":"list to update"},{"type":"*","name":"value","description":"value to remove"},{"type":"Bool","name":"recursive","description":"enable/disable recursion"}],"example":["sl-remove(a b c, a)\n// b c"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_remove.scss","name":"_remove"},"access":["public"],"aliased":["sl-without"],"usedBy":[{"item":"sl-without","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-without"},"requires":[{"type":"function","name":"sl-remove"}],"alias":["sl-remove"],"file":{"path":"examples/stylesheets/SassyLists/_remove.scss","name":"_remove"},"access":["public"]},{"description":"Replaces value at `$index` from `$list` by `$value`.\n\n","context":{"type":"function","name":"sl-replace-nth"},"ignore":[null],"requires":[{"type":"function","name":"sl-purge"},{"type":"function","name":"sl-is-true"},{"type":"function","name":"sl-to-list"}],"parameters":[{"type":"List","name":"list","description":"list to update"},{"type":"Number","name":"index","description":"index to update"},{"type":"*","name":"value","description":"new value for index"}],"throws":["Invalid index $index for `sl-replace-nth`."],"example":["sl-replace-nth(a b c, 2, z)\n// a z c","sl-replace-nth(a b c, 100, z)\n// null"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_replace-nth.scss","name":"_replace-nth"},"usedBy":[{"item":"sl-remove-nth","type":"function"}],"access":["public"]},{"description":"Replaces `$old` by `$new` in `$list`.\n\n","context":{"type":"function","name":"sl-replace"},"ignore":[null],"requires":[{"type":"function","name":"sl-is-true"},{"type":"function","name":"sl-purge"},{"type":"function","name":"sl-to-list"}],"parameters":[{"type":"List","name":"list","description":"list to update"},{"type":"*","name":"old","description":"value to replace"},{"type":"*","name":"value","description":"new value for $old"}],"example":["sl-replace(a b c, b, z)\n// a z c","sl-replace(a b c, y, z)\n// a b c"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_replace.scss","name":"_replace"},"usedBy":[{"item":"sl-remove","type":"function"}],"access":["public"]},{"description":"Reverses the order of `$list`.\n\n","context":{"type":"function","name":"sl-reverse"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to reverse"}],"requires":[{"type":"function","name":"sl-to-list"}],"example":["sl-reverse(a b c)\n// c b a"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_reverse.scss","name":"_reverse"},"usedBy":[{"item":"sl-is-symmetrical","type":"function"},{"item":"sl-mirror","type":"function"}],"access":["public"],"aliased":["sl-mirror"]},{"description":"","context":{"type":"function","name":"sl-mirror"},"requires":[{"type":"function","name":"sl-reverse"}],"alias":["sl-reverse"],"file":{"path":"examples/stylesheets/SassyLists/_reverse.scss","name":"_reverse"},"access":["public"]},{"description":"Shuffle `$list` using Fisher-Yates method.\n\n","context":{"type":"function","name":"sl-shuffle"},"since":["0.4.8"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to shuffle"}],"requires":[{"type":"function","name":"sl-to-list"}],"example":["sl-shuffle(a b c)\n// b a c"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_shuffle.scss","name":"_shuffle"},"access":["public"],"aliased":["sl-randomize"],"usedBy":[{"item":"sl-randomize","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-randomize"},"requires":[{"type":"function","name":"sl-shuffle"}],"alias":["sl-shuffle"],"file":{"path":"examples/stylesheets/SassyLists/_shuffle.scss","name":"_shuffle"},"access":["public"]},{"description":"Slices `$list` between `$start` and `$end`.\n\n","context":{"type":"function","name":"sl-slice"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to slice"},{"type":"Number","name":"start","default":"1","description":"start index"},{"type":"Number","name":"end","default":"length($list","description":") - end index"}],"throws":["List indexes $start and $end must be numbers for `sl-slice`.","Start index has to be lesser than or equals to the end index for `sl-slice`.","List indexes must be non-zero integers for `sl-slice`.","Start index has to be lesser than or equal to list length for `sl-slice`.","End index has to be lesser than or equal to list length for `sl-slice`."],"example":["sl-slice(a b c d e, 2, 4)\n// b c d","sl-slice(a b c d e, 2, 2)\n// b","sl-slice(a b c d e, 4, 2)\n// null","sl-slice(a b c d e, -1, 6)\n// null"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_slice.scss","name":"_slice"},"access":["public"],"usedBy":[{"item":"sl-tail","type":"function"}]},{"description":"Tests whether some items from `$list` pass the test implemented by `$function`.\n\n","context":{"type":"function","name":"sl-some"},"since":["2.0.0"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to run test against"},{"type":"String","name":"function","description":"function to run against every item from list"},{"type":"ArgList","name":"args","description":"extra arguments to pass to the function"}],"example":["sl-some(1 2 3, unitless)\n// true","sl-some(1 2 3px, unitless)\n// true","sl-some(1px 2px 3px, unitless)\n// false"],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/_some.scss","name":"_some"},"access":["public"]},{"description":"Sorts values of `$list` using quick-sort algorithm using `$order`.\n\n","context":{"type":"function","name":"sl-sort"},"ignore":[null],"requires":[{"type":"function","name":"sl-str-compare"},{"type":"function","name":"sl-has-multiple-values"},{"type":"function","name":"sl-to-list"}],"parameters":[{"type":"List","name":"list","description":"list to sort"},{"type":"List","name":"order","description":"order to respect"}],"example":["sl-sort(b a c)\n// a b c","sl-sort(3 5 1)\n// 1 3 5"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_sort.scss","name":"_sort"},"access":["public"],"aliased":["sl-order"],"usedBy":[{"item":"sl-order","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-order"},"requires":[{"type":"function","name":"sl-sort"}],"alias":["sl-sort"],"file":{"path":"examples/stylesheets/SassyLists/_sort.scss","name":"_sort"},"access":["public"]},{"description":"Sums up all numeric values in `$list`, stripping unit if `$force` set to `true`.\n\n","context":{"type":"function","name":"sl-sum"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list"},{"type":"Bool","name":"force","default":"false","description":"enable/disable parseInt"}],"requires":[{"type":"function","name":"sl-every"},{"type":"function","name":"sl-is-number"}],"throws":["All items from list are not numbers for `sl-sum`."],"example":["sl-sum(1 2 3)\n// 6","sl-sum(a b 1)\nnull","sl-sum(1 2 3px, true)\n// 6"],"returns":[{"type":"Number"}],"file":{"path":"examples/stylesheets/SassyLists/_sum.scss","name":"_sum"},"access":["public"]},{"description":"Returns the tail of `$list`: all items except the first (head).\n\n","context":{"type":"function","name":"sl-tail"},"since":["1.1.0"],"ignore":[null],"requires":[{"type":"function","name":"sl-slice"}],"parameters":[{"type":"List","name":"list","description":"list to retrieve tail from"}],"example":["sl-tail(a b c)\n// b c"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_tail.scss","name":"_tail"},"access":["public"],"aliased":["sl-rest"],"usedBy":[{"item":"sl-rest","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-rest"},"requires":[{"type":"function","name":"sl-tail"}],"alias":["sl-tail"],"file":{"path":"examples/stylesheets/SassyLists/_tail.scss","name":"_tail"},"access":["public"]},{"description":"Casts `$value` into a list.\n\n","context":{"type":"function","name":"sl-to-list"},"ignore":[null],"since":["2.1.0"],"parameters":[{"type":"*","name":"value","description":"value to cast to list"},{"type":"String","name":"separator","default":"space","description":"separator to use"}],"example":["sl-to-list(a b c, comma)\n// a, b, c"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_to-list.scss","name":"_to-list"},"usedBy":[{"item":"sl-chunk","type":"function"},{"item":"sl-intersection","type":"function"},{"item":"sl-prepend","type":"function"},{"item":"sl-purge","type":"function"},{"item":"sl-remove-duplicates","type":"function"},{"item":"sl-replace-nth","type":"function"},{"item":"sl-replace","type":"function"},{"item":"sl-reverse","type":"function"},{"item":"sl-shuffle","type":"function"},{"item":"sl-sort","type":"function"},{"item":"sl-listify","type":"function"},{"item":"sl-walk","type":"function"}],"access":["public"],"aliased":["sl-listify"]},{"description":"","context":{"type":"function","name":"sl-listify"},"requires":[{"type":"function","name":"sl-to-list"}],"alias":["sl-to-list"],"file":{"path":"examples/stylesheets/SassyLists/_to-list.scss","name":"_to-list"},"access":["public"]},{"description":"Casts `$list` into a map, using indexes as keys (starting with `$start`).\nUseful for iterating through a list with an index variable.\ne.g. `@each $index, $value in to-map($list)`\n\n","context":{"type":"function","name":"sl-to-map"},"since":["2.0.0"],"author":["Andrey \"Lolmaus\" Mikhaylov","Chris Eppstein"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to turn into map"}],"requires":[{"type":"function","name":"sl-range"},{"type":"function","name":"sl-is-empty"}],"throws":["List cannot be empty for `sl-to-map`."],"example":["sl-to-map(a b c)\n// 1 a, 2 b, 3 c"],"returns":[{"type":"Map | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_to-map.scss","name":"_to-map"},"access":["public"],"aliased":["sl-enumerate","sl-mapify"],"usedBy":[{"item":"sl-enumerate","type":"function"},{"item":"sl-mapify","type":"function"},{"item":"sl-walk","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-enumerate"},"requires":[{"type":"function","name":"sl-to-map"}],"alias":["sl-to-map"],"file":{"path":"examples/stylesheets/SassyLists/_to-map.scss","name":"_to-map"},"access":["public"]},{"description":"","context":{"type":"function","name":"sl-mapify"},"requires":[{"type":"function","name":"sl-to-map"}],"alias":["sl-to-map"],"file":{"path":"examples/stylesheets/SassyLists/_to-map.scss","name":"_to-map"},"access":["public"]},{"description":"Joins all elements of `$list` with `$glue`.\n\n","context":{"type":"function","name":"sl-to-string"},"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to cast"},{"type":"String","name":"glue","default":"''","description":"value to use as a join string"}],"requires":[{"type":"function","name":"sl-has-multiple-values"},{"type":"function","name":"sl-last"}],"example":["sl-to-string(a b c)\n// abc","sl-to-string(a b c, '-')\n// a-b-c"],"returns":[{"type":"String"}],"file":{"path":"examples/stylesheets/SassyLists/_to-string.scss","name":"_to-string"},"access":["public"],"aliased":["sl-stringify"],"usedBy":[{"item":"sl-stringify","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-stringify"},"requires":[{"type":"function","name":"sl-to-string"}],"alias":["sl-to-string"],"file":{"path":"examples/stylesheets/SassyLists/_to-string.scss","name":"_to-string"},"access":["public"]},{"description":"Returns a list of values from `$lists` minus duplicates.\n\n","context":{"type":"function","name":"sl-union"},"since":["0.3.0"],"ignore":[null],"requires":[{"type":"function","name":"sl-flatten"},{"type":"function","name":"sl-remove-duplicates"}],"parameters":[{"type":"ArgList","name":"lists","description":"lists to unify"}],"example":["sl-union(a b c, b e d, a c b)\n// a b c e d"],"returns":[{"type":"List"}],"file":{"path":"examples/stylesheets/SassyLists/_union.scss","name":"_union"},"access":["public"],"aliased":["sl-merge"],"usedBy":[{"item":"sl-merge","type":"function"}]},{"description":"","context":{"type":"function","name":"sl-merge"},"requires":[{"type":"function","name":"sl-union"}],"alias":["sl-union"],"file":{"path":"examples/stylesheets/SassyLists/_union.scss","name":"_union"},"access":["public"]},{"description":"Apply `$function` to every item from `$list` passing $args as parameters.\n\n","context":{"type":"function","name":"sl-walk"},"since":["1.1.0"],"ignore":[null],"parameters":[{"type":"List","name":"list","description":"list to update"},{"type":"String","name":"function","description":"function to call on each value"},{"type":"ArgList","name":"args","description":"optional function arguments"}],"throws":["There is no `$function` function for `sl-walk`."],"requires":[{"type":"function","name":"sl-to-map"},{"type":"function","name":"sl-to-list"}],"example":["sl-walk(a b c, to-upper-case)\n// A B C"],"returns":[{"type":"List | Null"}],"file":{"path":"examples/stylesheets/SassyLists/_walk.scss","name":"_walk"},"access":["public"]},{"description":"Check whether value is a number\n\n","context":{"type":"function","name":"sl-is-number"},"access":["private"],"parameters":[{"type":"*","name":"value","description":"value to run test against"}],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/helpers/_is-number.scss","name":"_is-number"},"usedBy":[{"item":"sl-sum","type":"function"}]},{"description":"Checks whether `$functions` exist in global scope.\n\n","context":{"type":"function","name":"sl-missing-dependencies"},"access":["private"],"parameters":[{"type":"ArgList","name":"functions","description":"list of functions to check for"}],"returns":[{"type":"Bool","description":"Whether or not there are missing dependencies"}],"file":{"path":"examples/stylesheets/SassyLists/helpers/_missing-dependencies.scss","name":"_missing-dependencies"}},{"description":"Compares `$a` and `$b` based on `$order`.\n\n","context":{"type":"function","name":"sl-str-compare"},"access":["private"],"parameters":[{"type":"*","name":"a","description":"first value"},{"type":"*","name":"b","description":"second value"},{"type":"List","name":"matrix","description":"alphabetical order"}],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/helpers/_str-compare.scss","name":"_str-compare"},"usedBy":[{"item":"sl-sort","type":"function"}]},{"description":"Returns truthiness of `$value`.\n\n","context":{"type":"function","name":"sl-is-true"},"access":["private"],"parameters":[{"type":"*","name":"value","description":"value to check"}],"returns":[{"type":"Bool"}],"file":{"path":"examples/stylesheets/SassyLists/helpers/_true.scss","name":"_true"},"usedBy":[{"item":"sl-insert-nth","type":"function"},{"item":"sl-prepend","type":"function"},{"item":"sl-purge","type":"function"},{"item":"sl-replace-nth","type":"function"},{"item":"sl-replace","type":"function"}]}],"mixin":[{"description":"Mixin displaying clean debug\n\n","context":{"type":"mixin","name":"sl-debug"},"parameters":[{"type":"List","name":"list","description":"list"}],"requires":[{"type":"function","name":"sl-debug"}],"file":{"path":"examples/stylesheets/SassyLists/_debug.scss","name":"_debug"},"access":["public"]}]};</script>
   <script src="assets/js/prism.min.js"></script>
+  <script src="assets/js/lunr.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
