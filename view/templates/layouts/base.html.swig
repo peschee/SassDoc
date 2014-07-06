@@ -9,7 +9,11 @@
 </head>
 <body>
   <div class="sassdoc">
-
+    <div class="searchbar">
+       <input name="search" type="text" id="js-search-input"/>
+       <ul class="searchbar__suggestions" id="js-search-suggestions">
+       </ul>
+    </div>
     {% set item_count = 0 %}
 
     {% for group, object in data %}
@@ -41,5 +45,7 @@
   </div>
 
   <script src="assets/js/prism.min.js"></script>
+  <script src="assets/js/fuse.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
