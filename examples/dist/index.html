@@ -63,10 +63,10 @@
         
       
           
-      
-          
           
         
+      
+          
       
           
           
@@ -340,6 +340,14 @@
     
       
         <li>
+        <a href="#function-sl-debug">sl-debug</a> 
+        
+        
+        </li>
+      
+    
+      
+        <li>
         <a href="#function-sl-every">sl-every</a> 
         
         
@@ -348,7 +356,7 @@
     
       
         <li>
-        <a href="#function-sl-debug">sl-debug</a> 
+        <a href="#function-sl-explode">sl-explode</a> 
         
         
         </li>
@@ -362,14 +370,6 @@
         </li>
       
     
-      
-    
-      
-        <li>
-        <a href="#function-sl-explode">sl-explode</a> 
-        
-        
-        </li>
       
     
       
@@ -1368,168 +1368,6 @@
         
           
           
-            <section class="sassdoc__item  " id="function-sl-every" data-type="function" data-name="sl-every">
-
-  <h2 class="sassdoc__item-name">
-  
-  
-  <code>sl-every</code>
-
-  
-
-  
-
-  
-    <span class="sassdoc__item-since">Since 2.0.0</span>
-  
-</h2>
-
-  
-  
-    
-
-    
-
-    
-
-    
-      
-    
-  
-    
-
-    
-
-    
-
-    
-      
-    
-  
-    
-
-    
-
-    
-      
-    
-
-    
-      
-    
-  
-  <pre class="sassdoc__item-code  language-scss"><code>@function sl-every ($list, $function, $args...) { ... }</code></pre>
-
-  
-
-    
-  <h3>Description</h3>
-  <p class="sassdoc__item-description"><p>Tests whether all items from <code>$list</code> pass the test implemented by <code>$function</code>.</p></p>
-
-
-    
-<h3>Parameters</h3>
-
-<table class="sassdoc__item-parameters">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Default value</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-      <tr class="sassdoc__item-parameter">
-        <td data-label="name"><code>$list</code></td>
-        <td data-label="desc"><p>list to run test against</p></td>
-        <td data-label="type">
-        
-          <code>List</code>
-        
-        </td>
-        <td data-label="default">&mdash;</td>
-      </tr>
-    
-      <tr class="sassdoc__item-parameter">
-        <td data-label="name"><code>$function</code></td>
-        <td data-label="desc"><p>function to run against every item from list</p></td>
-        <td data-label="type">
-        
-          <code>String</code>
-        
-        </td>
-        <td data-label="default">&mdash;</td>
-      </tr>
-    
-      <tr class="sassdoc__item-parameter">
-        <td data-label="name"><code>$args</code></td>
-        <td data-label="desc"><p>extra arguments to pass to the function</p></td>
-        <td data-label="type">
-        
-          <code>Arglist</code>
-        
-        </td>
-        <td data-label="default">&mdash;</td>
-      </tr>
-    
-  </tbody>
-</table>
-
-
-    
-  <h3>Returns</h3>
-  <p class="sassdoc__item-description">
-  
-    <code>Bool</code>
-  
-  </p>
-
-
-    
-  <h3>Example</h3>
-  
-    <pre class="sassdoc__item-code"><code class="language-scss">sl-every(1 2 3, unitless)
-// true</code></pre>
-  
-    <pre class="sassdoc__item-code"><code class="language-scss">sl-every(1 2 3px, unitless)
-// false</code></pre>
-  
-
-
-    
-
-    
-
-    
-  <h3>Used by</h3>
-  
-    <ul class="sassdoc__item-usedby">
-    <li><a href="#function-sl-sum"><code>sl-sum</code></a></li>
-    </ul>
-  
-
-
-    	
-
-    
-
-    
-
-    
-  <h3>Found at</h3>
-  <p><code>examples/stylesheets/SassyLists/_every.scss</code></p>
-
-
-  
-
-</section>
-
-          
-        
-          
-          
             <section class="sassdoc__item  " id="function-sl-debug" data-type="function" data-name="sl-debug">
 
   <h2 class="sassdoc__item-name">
@@ -1704,17 +1542,19 @@
         
           
           
-            <section class="sassdoc__item  " id="function-sl-first" data-type="function" data-name="sl-first">
+            <section class="sassdoc__item  " id="function-sl-every" data-type="function" data-name="sl-every">
 
   <h2 class="sassdoc__item-name">
   
   
-  <code>sl-first</code>
+  <code>sl-every</code>
 
   
 
   
 
+  
+    <span class="sassdoc__item-since">Since 2.0.0</span>
   
 </h2>
 
@@ -1730,13 +1570,35 @@
       
     
   
-  <pre class="sassdoc__item-code  language-scss"><code>@function sl-first ($list) { ... }</code></pre>
+    
+
+    
+
+    
+
+    
+      
+    
+  
+    
+
+    
+
+    
+      
+    
+
+    
+      
+    
+  
+  <pre class="sassdoc__item-code  language-scss"><code>@function sl-every ($list, $function, $args...) { ... }</code></pre>
 
   
 
     
   <h3>Description</h3>
-  <p class="sassdoc__item-description"><p>Returns first element of <code>$list</code>.</p></p>
+  <p class="sassdoc__item-description"><p>Tests whether all items from <code>$list</code> pass the test implemented by <code>$function</code>.</p></p>
 
 
     
@@ -1755,10 +1617,32 @@
     
       <tr class="sassdoc__item-parameter">
         <td data-label="name"><code>$list</code></td>
-        <td data-label="desc"><p>list to retrieve first item from</p></td>
+        <td data-label="desc"><p>list to run test against</p></td>
         <td data-label="type">
         
           <code>List</code>
+        
+        </td>
+        <td data-label="default">&mdash;</td>
+      </tr>
+    
+      <tr class="sassdoc__item-parameter">
+        <td data-label="name"><code>$function</code></td>
+        <td data-label="desc"><p>function to run against every item from list</p></td>
+        <td data-label="type">
+        
+          <code>String</code>
+        
+        </td>
+        <td data-label="default">&mdash;</td>
+      </tr>
+    
+      <tr class="sassdoc__item-parameter">
+        <td data-label="name"><code>$args</code></td>
+        <td data-label="desc"><p>extra arguments to pass to the function</p></td>
+        <td data-label="type">
+        
+          <code>Arglist</code>
         
         </td>
         <td data-label="default">&mdash;</td>
@@ -1772,7 +1656,7 @@
   <h3>Returns</h3>
   <p class="sassdoc__item-description">
   
-    Any
+    <code>Bool</code>
   
   </p>
 
@@ -1780,40 +1664,23 @@
     
   <h3>Example</h3>
   
-    <pre class="sassdoc__item-code"><code class="language-scss">sl-first(a b c)
-// a</code></pre>
+    <pre class="sassdoc__item-code"><code class="language-scss">sl-every(1 2 3, unitless)
+// true</code></pre>
   
-    <pre class="sassdoc__item-code"><code class="language-scss">sl-first(a)
-// a</code></pre>
-  
-    <pre class="sassdoc__item-code"><code class="language-scss">sl-first(())
-// null</code></pre>
+    <pre class="sassdoc__item-code"><code class="language-scss">sl-every(1 2 3px, unitless)
+// false</code></pre>
   
 
 
     
-  <h3>Throws</h3>
-  
-    <ul class="sassdoc__item-throws">
-    <li><p>Cannot find first item of empty list.</p></li>
-    </ul>
-  
-
 
     
-  <h3>Requires</h3>
-  
-    <ul class="sassdoc__item-requires">
-    <li><a href="#function-sl-is-empty"><code>sl-is-empty</code></a></li>
-    </ul>
-  
-
 
     
   <h3>Used by</h3>
   
     <ul class="sassdoc__item-usedby">
-    <li><a href="#function-sl-head"><code>sl-head</code></a></li>
+    <li><a href="#function-sl-sum"><code>sl-sum</code></a></li>
     </ul>
   
 
@@ -1826,16 +1693,13 @@
 
     
   <h3>Found at</h3>
-  <p><code>examples/stylesheets/SassyLists/_first.scss</code></p>
+  <p><code>examples/stylesheets/SassyLists/_every.scss</code></p>
 
 
   
 
 </section>
 
-          
-        
-          
           
         
           
@@ -2002,6 +1866,142 @@
 
 </section>
 
+          
+        
+          
+          
+            <section class="sassdoc__item  " id="function-sl-first" data-type="function" data-name="sl-first">
+
+  <h2 class="sassdoc__item-name">
+  
+  
+  <code>sl-first</code>
+
+  
+
+  
+
+  
+</h2>
+
+  
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+  <pre class="sassdoc__item-code  language-scss"><code>@function sl-first ($list) { ... }</code></pre>
+
+  
+
+    
+  <h3>Description</h3>
+  <p class="sassdoc__item-description"><p>Returns first element of <code>$list</code>.</p></p>
+
+
+    
+<h3>Parameters</h3>
+
+<table class="sassdoc__item-parameters">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Default value</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr class="sassdoc__item-parameter">
+        <td data-label="name"><code>$list</code></td>
+        <td data-label="desc"><p>list to retrieve first item from</p></td>
+        <td data-label="type">
+        
+          <code>List</code>
+        
+        </td>
+        <td data-label="default">&mdash;</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+
+    
+  <h3>Returns</h3>
+  <p class="sassdoc__item-description">
+  
+    Any
+  
+  </p>
+
+
+    
+  <h3>Example</h3>
+  
+    <pre class="sassdoc__item-code"><code class="language-scss">sl-first(a b c)
+// a</code></pre>
+  
+    <pre class="sassdoc__item-code"><code class="language-scss">sl-first(a)
+// a</code></pre>
+  
+    <pre class="sassdoc__item-code"><code class="language-scss">sl-first(())
+// null</code></pre>
+  
+
+
+    
+  <h3>Throws</h3>
+  
+    <ul class="sassdoc__item-throws">
+    <li><p>Cannot find first item of empty list.</p></li>
+    </ul>
+  
+
+
+    
+  <h3>Requires</h3>
+  
+    <ul class="sassdoc__item-requires">
+    <li><a href="#function-sl-is-empty"><code>sl-is-empty</code></a></li>
+    </ul>
+  
+
+
+    
+  <h3>Used by</h3>
+  
+    <ul class="sassdoc__item-usedby">
+    <li><a href="#function-sl-head"><code>sl-head</code></a></li>
+    </ul>
+  
+
+
+    	
+
+    
+
+    
+
+    
+  <h3>Found at</h3>
+  <p><code>examples/stylesheets/SassyLists/_first.scss</code></p>
+
+
+  
+
+</section>
+
+          
+        
+          
           
         
           
